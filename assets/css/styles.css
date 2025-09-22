@@ -661,7 +661,89 @@ img {
     border-radius: 4rem;
     font-size: var(--smaller-font-size);
     font-family: var(--second-font);
+    display: flex;
+    align-items: center;
+    gap: .3rem;
 }
+
+.hide-cursor {
+    width: 0;
+    height: 0;
+}
+
+.fontIcon {
+    font-size: 18px;
+}
+
+.blazor {
+    color: rgb(162, 0, 255);
+}
+
+.react {
+    color: aqua;
+}
+
+.html {
+    color: tomato;
+}
+
+.css {
+    color: rgb(96, 167, 247);
+}
+
+.js {
+    color: yellow;
+}
+
+.ts {
+    color: rgb(29, 102, 211);
+}
+
+.angular {
+    color: rgb(241, 69, 39);
+}
+
+.nodejs {
+    color: rgb(47, 221, 24);
+}
+
+.sass {
+    color: rgb(219, 43, 235);
+}
+
+.tailwind {
+    color: aqua;
+}
+
+.net {
+    color: blueviolet;
+}
+
+.mongo {
+    color: rgb(47, 221, 24);
+}
+
+.postgre {
+    color: rgb(29, 102, 211);
+}
+
+.express {
+    color: yellow;
+}
+
+.sql {
+    color: rgb(201, 37, 37);
+}
+
+.mq {
+    color: rgb(255, 123, 0);
+}
+
+.pattern {
+    color: aqua;
+}
+
+
 
 .services__button {
     display: grid;
@@ -851,11 +933,6 @@ img {
         height .3s;
 }
 
-/* hide cursor */
-.hide-cursor{
-    width: 0;
-    height: 0;
-}
 
 /* BREAKPOINTS */
 @media (max-width:320px) {
@@ -1230,16 +1307,15 @@ img {
     }
 }
 
-@media (min-width: 2048px){
-    body{
+@media (min-width: 2048px) {
+    body {
         zoom: 1.4;
     }
 }
 
 /* hide custom cursor for mobile devices */
-@media (pointer: coarse){
-    .cursor{
+@media (pointer: coarse) {
+    .cursor {
         display: none;
     }
 }
-
